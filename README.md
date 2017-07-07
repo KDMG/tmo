@@ -2,7 +2,7 @@
 A (minimal) Transmodel ontological meta-model
 
 * File "tmo.ttl" includes the N3 serialization of the Transmodel ontological meta-model.
-* File "kpionto.rdf" includes the RDF/XML serialization of the Transmodel ontological meta-model.
+* File "tmo.rdf" includes the RDF/XML serialization of the Transmodel ontological meta-model.
 * The "example" folder includes usage examples of the ontology. 
 
 How to cite
