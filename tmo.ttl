@@ -1,0 +1,69 @@
+@prefix tmo: <http://kdmg.univpm.dii.it/transmodel/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+
+tmo:  rdf:type owl:Ontology ;
+      dc:created "2017/04/01 12:00:00";
+      dc:date "2017/04/04 13:00:00";
+      dc:description "The Transmodel Ontology provides main meta-concepts and properties for describing the relation between Transmodel classes." ;
+      dc:title "Transmodel Ontology" ;
+      owl:versionInfo "Revision: 1.0.0" ;
+      dc:creator 
+        [ foaf:name "Emanuele Storti"; foaf:homepage <http://www.dii.univpm.it/emanuele.storti> ],
+        [ foaf:name "Domenico Potena"],
+	[ foaf:name "Claudia Diamantini"].
+
+#################################################################
+#    Classes
+#################################################################
+
+tmo:TBasicData rdf:type owl:Class;
+	rdfs:isDefinedBy tmo: ;
+	rdfs:comment "An attribute of a class in the Transmodel data model." ;
+	rdfs:label "Transmodel basic data" .
+
+
+tmo:TClass rdf:type owl:Class ;
+	rdfs:isDefinedBy tmo: ;
+	rdfs:comment "A class in the Transmodel data model." ;
+	rdfs:label "Transmodel class" .
+
+
+tmo:TPackage rdf:type owl:Class ;
+	rdfs:isDefinedBy tmo: ;
+	rdfs:comment "A package in the Transmodel data model." ;
+	rdfs:label "Transmodel package" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+tmo:dependentOn rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ,
+                         owl:TransitiveProperty ;
+             rdfs:domain tmo:TClass ;
+             rdfs:range tmo:TClass ;
+	     rdfs:isDefinedBy tmo: ;
+	     rdfs:comment "The dependency relation between two Transmodel classes." ;
+	     rdfs:label "dependent on" .
+
+
+
+tmo:inClass rdf:type owl:ObjectProperty ;
+         rdfs:domain tmo:TBasicData ;
+         rdfs:range tmo:TClass ;
+	 rdfs:isDefinedBy tmo: ;
+	 rdfs:comment "Specifies that a certain attribute is included in a Transmodel class." ;
+	 rdfs:label "in class" .
+
+
+tmo:subPackageOf rdf:type owl:ObjectProperty ;
+              rdfs:domain tmo:TPackage ;
+              rdfs:range tmo:TPackage ;
+  	      rdfs:isDefinedBy tmo: ;
+	      rdfs:comment "Specified that a package is included in a Transmodel package." ;
+	      rdfs:label "subpackage of" .
+
