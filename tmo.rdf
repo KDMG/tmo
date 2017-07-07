@@ -17,6 +17,12 @@
         <foaf:homepage rdf:resource="http://www.dii.univpm.it/emanuele.storti"/>
       </rdf:Description>
     </dc11:creator>
+           
+    <dc11:creator>
+      <rdf:Description>
+        <foaf:name>Filippo Benvenuti</foaf:name>
+      </rdf:Description>
+    </dc11:creator>
 
     <dc11:creator>
       <rdf:Description>
