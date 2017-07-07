@@ -12,10 +12,7 @@ tmo:  rdf:type owl:Ontology ;
       dc:title "Transmodel Ontology" ;
       owl:versionInfo "Revision: 1.0.0" ;
       dc:creator 
-        [ foaf:name "Emanuele Storti"; foaf:homepage <http://www.dii.univpm.it/emanuele.storti> ],
-	[ foaf:name "Filippo Benvenuti"],
-        [ foaf:name "Domenico Potena"],
-	[ foaf:name "Claudia Diamantini"].
+        [ foaf:name "Emanuele Storti"; foaf:homepage <http://www.dii.univpm.it/emanuele.storti> ].
 
 #################################################################
 #    Classes
