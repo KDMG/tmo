@@ -17,25 +17,6 @@
         <foaf:homepage rdf:resource="http://www.dii.univpm.it/emanuele.storti"/>
       </rdf:Description>
     </dc11:creator>
-           
-    <dc11:creator>
-      <rdf:Description>
-        <foaf:name>Filippo Benvenuti</foaf:name>
-      </rdf:Description>
-    </dc11:creator>
-
-    <dc11:creator>
-      <rdf:Description>
-        <foaf:name>Domenico Potena</foaf:name>
-      </rdf:Description>
-    </dc11:creator>
-
-    <dc11:creator>
-      <rdf:Description>
-        <foaf:name>Claudia Diamantini</foaf:name>
-      </rdf:Description>
-    </dc11:creator>
-
   </owl:Ontology>
 
   <owl:Class rdf:about="http://kdmg.univpm.dii.it/transmodel/TBasicData">
